@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFF</color>
+    <color name="indicator_color_1">#64D8B5</color>
+    <color name="indicator_color_2">#B7D776</color>
+    <color name="indicator_color_3">#FFD863</color>
+    <color name="indicator_color_4">#FFB48A</color>
+    <color name="indicator_color_5">#FF3C64</color>
+
+</resources>

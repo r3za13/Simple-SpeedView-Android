@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="sample5">#9C27B0</color>
+    <color name="sample4">#673AB7</color>
+    <color name="sample3">#3F51B5</color>
+    <color name="sample2">#2196F3</color>
+    <color name="sample1">#03A9F4</color>
+
+    <color name="sample50">#FF8A65</color>
+    <color name="sample40">#FFB74D</color>
+    <color name="sample30">#FFD54F</color>
+    <color name="sample20">#DCE775</color>
+    <color name="sample10">#FFF176</color>
+
+
+    <color name="sample100">#CECECE</color>
+    <color name="sample200">#ADADAD</color>
+    <color name="sample300">#585857</color>
+    <color name="sample400">#353434</color>
+    <color name="sample500">#000000</color>
+
+    <color name="sample1000">#FFC400</color>
+    <color name="sample2000">#FF9100</color>
+    <color name="sample3000">#FF3D00</color>
+    <color name="sample4000">#D83801</color>
+    <color name="sample5000">#BE0000</color>
+</resources>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="16dp"
+
+    >
+    <TextView
+        android:id="@+id/tvValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="32dp"
+        android:textColor="#000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/s2"
+        app:layout_constraintEnd_toEndOf="@+id/s1"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="Hello" />
+
+
+    <com.r3za.simplespeedview.SimpleSpeedView
+        android:id="@+id/s1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:has_start_animation="true"
+        app:indicator_circle_radius="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:part_margin="0.5dp"
+        app:parts_count="5"
+        app:parts_width="46dp"
+        app:progress="100" />
+
+    <ImageView
+        android:id="@+id/ivAnim"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvValue"
+        app:layout_constraintEnd_toEndOf="@+id/s1"
+        app:layout_constraintStart_toStartOf="@+id/s1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+    <com.r3za.simplespeedview.SimpleSpeedView
+        android:id="@+id/s2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:has_start_animation="true"
+        app:indicator_color="#EB9322"
+        app:layout_constraintEnd_toStartOf="@+id/s3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/s1"
+        android:layout_marginTop="32dp"
+        app:part_margin="0.5dp"
+        app:parts_count="5"
+        app:parts_width="22dp"
+        app:progress="20" />
+
+
+    <com.r3za.simplespeedview.SimpleSpeedView
+        android:id="@+id/s3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        app:indicator_color="#000"
+        app:has_start_animation="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/s2"
+        app:layout_constraintTop_toTopOf="@+id/s2"
+        app:part_margin="0.75dp"
+        app:parts_count="5"
+        app:parts_width="30dp"
+        app:progress="45" />
+
+    <com.r3za.simplespeedview.SimpleSpeedView
+        android:id="@+id/s4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:has_start_animation="true"
+        app:indicator_circle_radius="8dp"
+        android:layout_marginTop="32dp"
+        app:indicator_color="#00E676"
+        app:layout_constraintEnd_toStartOf="@+id/s5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/s3"
+        app:part_margin="-1dp"
+        app:parts_count="5"
+        app:parts_width="44dp"
+        />
+
+    <com.r3za.simplespeedview.SimpleSpeedView
+        android:id="@+id/s5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        app:has_start_animation="true"
+        app:indicator_circle_radius="14dp"
+        app:indicator_color="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/s4"
+        app:layout_constraintTop_toTopOf="@+id/s4"
+        app:part_margin="0.45dp"
+        app:parts_count="5"
+        app:parts_width="16dp"
+        app:progress="50" />
+
+    <EditText
+        android:id="@+id/etProgress"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:hint="Enter progress"
+        android:inputType="number"
+        app:layout_constraintEnd_toStartOf="@+id/s5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/s4" />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/etProgress"
+        app:layout_constraintTop_toBottomOf="@+id/s5" />
+</android.support.constraint.ConstraintLayout>
