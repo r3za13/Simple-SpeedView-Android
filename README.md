@@ -2,6 +2,7 @@
 # Simple-SpeedView-Android
 Simple speedView widget for android
 <img src="https://github.com/r3za13/Simple-SpeedView-Android/blob/master/sample.gif" width="400">
+
 ### Adding widget:
 ```
 <com.r3za.simplespeedview.SimpleSpeedView
